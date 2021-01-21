@@ -42,6 +42,7 @@ def rules_detekt_toolchains(detekt_version = "1.10.0", toolchain = "@rules_detek
             maven.artifact("junit", "junit", "4.13"),
         ],
         repositories = [
+            "https://nexus-proxy-prd.soma.salesforce.com/nexus/content/groups/public",
             "https://repo1.maven.org/maven2",
             "https://jcenter.bintray.com/",
         ],
